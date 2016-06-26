@@ -1,0 +1,39 @@
+body{
+/*
+	background: #2BC0E4;
+	background: -webkit-linear-gradient(to left, #2BC0E4 , #EAECC6); 
+	background: linear-gradient(to left, #2BC0E4 , #EAECC6);
+*/
+
+
+
+background: #00d2ff; /* fallback for old browsers */
+background: -webkit-linear-gradient(to left, #00d2ff , #3a7bd5); /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to left, #00d2ff , #3a7bd5); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+  
+
+
+}
+
+h1{
+	font-family: "HelveticaNeue-UltraLight";
+	font-size: 80px;
+	font-weight: 100;
+	color: white;
+
+}
+
+p{
+	font-family: "HelveticaNeue-Thin";
+	font-size: 24px;
+}
+
+#header{
+	text-align: center;
+}
+
+.mjkImage{
+	width: 250px;
+	border-radius: 125px;
+}
