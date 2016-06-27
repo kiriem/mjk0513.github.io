@@ -29,7 +29,7 @@
                 var speed = 700;
                 var href= $(this).attr("href");
                	var target = $(href == "#" || href == "" ? 'html' : href);
-                var position = target.offset().top+20;
+                var position = target.offset().top-110;
                 $('body,html').animate({scrollTop:position}, speed, 'swing');
                 	return false;
                 });
@@ -97,7 +97,7 @@
 			<p class="text">
 			CoderDojoを運営するなかで出会った同世代のクリエイターたちと、CoreTeamというチームを結成しました。ほとんどのメンバーが柏に住んでおり、地元のお祭りでステージの演出をしたり全体の撮影をしたり、小学校でイベントを開催したりしています。<br>
 			私たちの特徴は全員できることがバラバラであるということです。ある者はプログラミングをし、あるものはカメラで撮影し、またあるものはそれを編集する。挙句の果てにはDJもいれば3DCGを創れるような者もいる。まさに"みんなちがってみんないい"という状態です。<br>
-			私たちの活動の一部をProjectsにまとめました。
+			私たちの活動の一部をProjectsにまとめています。
 			</p>
 
 		</div>	
