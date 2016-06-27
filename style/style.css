@@ -7,6 +7,11 @@ body{
 	background: #00d2ff; /* fallback for old browsers */
 	background: -webkit-linear-gradient(to left, #00d2ff , #3a7bd5); /* Chrome 10-25, Safari 5.1-6 */
 	background: linear-gradient(to left, #00d2ff , #3a7bd5); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+	font-family: "HelveticaNeue-Thin";
+
+	color: white;
+
 }
 
 h1{
@@ -23,14 +28,92 @@ a{
 
 p{
 	font-family: "HelveticaNeue-Thin";
-	font-size: 24px;
+	font-size: 28px;
+}
+
+li{
+	font-size: 20px;
 }
 
 #header{
 	text-align: center;
 }
 
+#langBtn{
+	text-align: center;
+	font-size: 24px;
+}
+
+#menu{
+	width: 80%;
+
+	margin-left: 10%;
+	margin-right: 10%;
+	margin-bottom: 100px;
+
+}
+
+#menu li{
+	list-style-type: none;
+	text-align: center;
+	float: left;
+	width: 20%;
+	border-right: 1px solid #e6e4e4;
+	box-sizing: border-box;
+}
+
+#menu li:last-child{
+	border-right: none;
+}
+
+#menu li:hover{
+	    
+}
+
+#menu a{
+	display: block;
+	width: 100%;
+	padding: 10px 0;
+	font-size: 30px;
+}
+
+
+#container{
+	width: 70%;
+	margin-left: 15%;
+	margin-right: 15%;
+}
+
 .mjkImage{
+	margin-top: 20px;
 	width: 250px;
 	border-radius: 125px;
+}
+
+.langBtn{
+	font-size: 24px;
+}
+
+.fixed{
+	position: fixed;
+	top: 0;
+	width: 80%;
+	margin-left: 10%;
+	margin-right: 10%;
+	z-index: 10000;
+	background-color: white;
+	opacity: 0.5;
+}
+
+.fixed a{
+	color: black;
+}
+
+.subTitle{
+	font-family: 
+	font-size: 30px;
+}
+
+.text{
+	font-size: 18px;
 }

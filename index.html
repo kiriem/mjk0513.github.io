@@ -4,45 +4,98 @@
 	<meta charset="UTF-8">
 	<title>mjk</title>
 	<link rel="stylesheet" type="text/css" href="style/style.css">
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.1/jquery.min.js" type="text/javascript"></script>
+	<script type="text/javascript">
+		jQuery(function($) {
+		  
+			var nav    = $('#menu'),
+			    offset = nav.offset();
+			  
+			$(window).scroll(function () {
+			  if($(window).scrollTop() > offset.top) {
+			    nav.addClass('fixed');
+			  } else {
+			    nav.removeClass('fixed');
+			  }
+			});
+		  
+		});
+	</script>
+
+	<script type="text/javascript">
+		$(function(){
+			$('a[href^=#]').click(function() {
+                var speed = 700;
+                var href= $(this).attr("href");
+               	var target = $(href == "#" || href == "" ? 'html' : href);
+                var position = target.offset().top+20;
+                $('body,html').animate({scrollTop:position}, speed, 'swing');
+                	return false;
+                });
+            });
+	</script>
+
 </head>
 
 <body>
 	<div id="header">
+		<img src="./images/mjk.jpg" class="mjkImage">
 		<h1>KYRIE MIYAJIMA</h1>
-		<p>Work hard.</p>
 	</div>
-
+	<!--
+	<div id="langBtn">
+		<a href="" class="langBtn">J P</a> / <a href="" class="langBtn">E N</a>
+	</div>
+	-->
 	<div id="menu">
 		<ul>
-			<a href="#who"><li>Who am I ?</li></a>
-			<a href="#works"><li>Works</li></a>
-			<a href="#project"><li>Project</li></a>
-			<a href="#media"><li>Media</li></a>
+			<li><a href="#who">Who am I ?</a></li>
+			<li><a href="#works">Works</a></li>
+			<li><a href="#project">Project</a></li>
+			<li><a href="#media">Media</a></li>
+			<li><a href="#links">Links</a></li>
 		</ul>
 	</div>
+
+	<br><br>
 
 	<div id="container">
 
 		<div id="who">
-			<p>Name: 宮島衣瑛（Kirie Miyajima）</p>
-			<p>Birthday: 1997.05.13</p>
-			<p>School: Gakushuin University</p>
+			<h1 class="title">I'm...</h1>
+			<ul>
+				<li>Name : 宮島衣瑛 / Kirie Miyajima</li>
+				<li>Birthday : 1997.05.13</li>
+				<li>School : Gakushuin University Department of Pedagogy</li>
+				<li>Live : Kashiwa</li>
+				<li>Skils : Programming (iOS/Swift, Web/PHP), Programming Education</li>
+			</ul>
 		</div>
 
 		<div id="works">
-			<ul>
-				<li>CoderDojo Kashiwa</li>
-				<li>Code for Kashiwa</li>
-				<li>JamDigital</li>
-			</ul>
+			<h1 class="title">Works</h1>
+			<p class="subTitle">1. CoderDojo</p>
+			<p class="text">
+				CoderDojoは2011年にアイルランドからスタートした子どもたちのためのプログラミング道場です。現在では世界に1000を超えるDojoが開催されており、日本でも36のDojoが各地で開催されています。<br>
+				CoderDojo Kashiwaは2013年5月から活動を開始し、現在に至るまで60回以上開催し延べ500人以上が学んできました。2014年6月には柏の葉エリアにCoderDojo Kashiwa-no-haを設立し、より充実した学習環境を提供できるよう取り組んでいます。
+			</p>
+			<p class="text">参考：<a href="http://coderdojo.com">CoderDojo</a> / <a href="http://coderdojo.jp">CoderDojo Japan</a> / <a href="http://coderdojo-kashiwa.com">CoderDojo Kashiwa</a> / <a href="http://coderdojo-kashiwa.com/kashiwanoha">CoderDojo Kashiwa-no-ha</a>
 		</div>	
 
 		<div id="project">
+			<h1 class="title">Projects</h1>
+			<p class="text">Coming soon...</p>
 
 		</div>
 
 		<div id="media">
+			<h1 class="title">Media</h1>
+			<p class="text">Coming soon...</p>
+		</div>
 
+		<div id="links">
+			<h1 class="title">Links</h1>
 		</div>
 	</div>
 
