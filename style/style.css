@@ -84,6 +84,15 @@ li{
 	margin-right: 15%;
 }
 
+#footer{
+	font-size: 14px;
+}
+
+.footerText{
+	font-size: 12px;
+	text-align: center;
+}
+
 .mjkImage{
 	margin-top: 20px;
 	width: 250px;
