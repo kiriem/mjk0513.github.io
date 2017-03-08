@@ -1,0 +1,16 @@
+.titlePath{
+	stroke:white;
+	fill:none;
+	stroke-width:1;
+	stroke-dasharray: 3000;
+	stroke-dashoffset:3000;
+	animation: DASH 3s ease-in alternate forwards;
+	-webkit-animation:DASH 3s ease-in 0s forwards;
+	-o-animation:DASH 3s ease-in 0s forwards;
+	animation:DASH 3s ease-in 0s forwards;
+}
+
+@keyframes DASH{
+0%{stroke-dashoffset:3000;}
+100%{stroke-dashoffset:0;}
+}
