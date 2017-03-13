@@ -1,21 +1,29 @@
+@import url(//fonts.googleapis.com/earlyaccess/notosansjapanese.css);
+
 body{
 /*
 	background: #2BC0E4;
 	background: -webkit-linear-gradient(to left, #2BC0E4 , #EAECC6); 
 	background: linear-gradient(to left, #2BC0E4 , #EAECC6);
 */
+
+	
+
 	background: #00d2ff; /* fallback for old browsers */
 	background: -webkit-linear-gradient(to left, #00d2ff , #3a7bd5); /* Chrome 10-25, Safari 5.1-6 */
 	background: linear-gradient(to left, #00d2ff , #3a7bd5); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 
-	font-family: "HelveticaNeue-Thin";
-
+	font-family: 'Noto Sans Japanese', serif;
+	font-weight: 100;
 	color: white;
+
+		border-width: 2px;
+	border-color: white;
+	border-style: solid;
 
 }
 
 h1{
-	font-family: "HelveticaNeue-UltraLight";
 	font-size: 80px;
 	font-weight: 100;
 	color: white;
@@ -27,7 +35,6 @@ a{
 }
 
 p{
-	font-family: "HelveticaNeue-Thin";
 	font-size: 28px;
 }
 
@@ -82,6 +89,7 @@ li{
 	width: 70%;
 	margin-left: 15%;
 	margin-right: 15%;
+
 }
 
 #footer{
@@ -119,10 +127,70 @@ li{
 }
 
 .subTitle{
-	font-family: 
+	font-family: Arial, Helvetica, sans-serif;
 	font-size: 30px;
 }
 
 .text{
 	font-size: 18px;
+}
+
+.svgTitle{
+	width: 80%;
+	margin-left: 10%;
+	margin-right: 10%;
+}
+
+.headerTitle{
+	font-size: 30px;
+	text-align: center;
+}
+
+.headerSubTitle{
+	font-size: 24px;
+	text-align: center;
+	line-height: 0.5em;
+}
+
+/*== works ==*/
+
+#works_block{
+	width: 80%;
+	margin-left: 10%;
+	margin-right: 10%;
+	border-style: solid;
+	border-width: 2px;
+	border-color: white;
+	float: none;
+}
+
+#works_title_area{
+	width: 100%;
+	float: none;
+}
+
+.works_title{
+	font-size: 25px;
+}
+
+#works_image_area{
+	width: 60%;
+	float: left;
+}
+
+.works_image{
+	width: 100%;
+	height: auto;
+	margin-left: 10px;
+}
+
+#works_note_area{
+	width: 40%;
+		float: left;
+
+}
+
+.works_note{
+	width: 100%;
+	font-size: 15px;
 }
